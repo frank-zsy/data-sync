@@ -225,7 +225,11 @@ export default class DataFormatService extends Service {
   }
 
   public static boolFormatter: FormatFunc = item => {
-    // TODO
+    if (item.value === 'true' || item.value === '是') {
+      item.value = true;
+    } else {
+      item.value = false;
+    }
     return item;
   }
 
