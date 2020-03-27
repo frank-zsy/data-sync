@@ -8,6 +8,7 @@ import enterpriseDonationTable from '../app/schema/table_enterprise_donation';
 import factoryTable from '../app/schema/table_factory';
 import doctorHotelTable from '../app/schema/table_doctor_hotel';
 import patientDetailTable from '../app/schema/table_patient_detail';
+import googleTestTable from '../app/schema/table_google_test';
 import isaaclinApi from '../app/external_api/api_isaaclin';
 
 export default (appInfo: EggAppInfo) => {
@@ -66,6 +67,14 @@ export default (appInfo: EggAppInfo) => {
       factoryTable,
       doctorHotelTable,
       patientDetailTable,
+    ],
+  };
+
+  config.google = {
+    credentials: 'YOUR CREDENTIALS OBJECT',
+    token: 'TOKEN OF YOUR ACCOUNT',
+    tables: [
+      googleTestTable,
     ],
   };
 

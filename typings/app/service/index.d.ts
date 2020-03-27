@@ -6,6 +6,7 @@ import ExportApi from '../../../app/service/api';
 import ExportDataFormat from '../../../app/service/data_format';
 import ExportGitee from '../../../app/service/gitee';
 import ExportGithub from '../../../app/service/github';
+import ExportGoogle from '../../../app/service/google';
 import ExportLocation from '../../../app/service/location';
 import ExportQiniu from '../../../app/service/qiniu';
 import ExportShimo from '../../../app/service/shimo';
@@ -17,6 +18,7 @@ declare module 'egg' {
     dataFormat: ExportDataFormat;
     gitee: ExportGitee;
     github: ExportGithub;
+    google: ExportGoogle;
     location: ExportLocation;
     qiniu: ExportQiniu;
     shimo: ExportShimo;
